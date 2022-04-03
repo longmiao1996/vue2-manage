@@ -65,7 +65,10 @@
 							this.$message({
 		                        type: 'success',
 		                        message: '登录成功'
-		                    });
+							});
+							sessionStorage.setItem("userName", JSON.stringify({
+							userName: this.loginForm.username,
+						}))
 							this.$router.push('manage')
 						}else{
 							this.$message({
