@@ -69,7 +69,7 @@
 							sessionStorage.setItem("userName", JSON.stringify({
 							userName: this.loginForm.username,
 						}))
-							this.$router.push('manage')
+							this.$router.push('workHistoryList')
 						}else{
 							this.$message({
 		                        type: 'error',
@@ -94,7 +94,7 @@
                         type: 'success',
                         message: '检测到您之前登录过，将自动登录'
                     });
-					this.$router.push('manage')
+					this.$router.push('workHistoryList')
 				}
 			}
 		}
