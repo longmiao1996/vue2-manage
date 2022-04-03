@@ -8,8 +8,8 @@ const manage = r => require.ensure([], () => r(require('@/page/manage')), 'manag
 const home = r => require.ensure([], () => r(require('@/page/home')), 'home');
 const addShop = r => require.ensure([], () => r(require('@/page/addShop')), 'addShop');
 const addGoods = r => require.ensure([], () => r(require('@/page/addGoods')), 'addGoods');
-const userList = r => require.ensure([], () => r(require('@/page/userList')), 'userList');
-const shopList = r => require.ensure([], () => r(require('@/page/shopList')), 'shopList');
+const workHistoryList = r => require.ensure([], () => r(require('@/page/workHistoryList')), 'workHistoryList');
+const workStatistics = r => require.ensure([], () => r(require('@/page/workStatistics')), 'workStatistics');
 const foodList = r => require.ensure([], () => r(require('@/page/foodList')), 'foodList');
 const orderList = r => require.ensure([], () => r(require('@/page/orderList')), 'orderList');
 const adminList = r => require.ensure([], () => r(require('@/page/adminList')), 'adminList');
@@ -43,13 +43,13 @@ const routes = [
 			component: addGoods,
 			meta: ['添加数据', '添加商品'],
 		},{
-			path: '/userList',
-			component: userList,
-			meta: ['数据管理', '用户列表'],
+			path: '/workHistoryList',
+			component: workHistoryList,
+			meta: ['数据管理', '工数列表'],
 		},{
-			path: '/shopList',
-			component: shopList,
-			meta: ['数据管理', '商家列表'],
+			path: '/workStatistics',
+			component: workStatistics,
+			meta: ['数据管理', '工数统计'],
 		},{
 			path: '/foodList',
 			component: foodList,
